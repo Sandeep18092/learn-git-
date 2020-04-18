@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        
+            <script> 
+               //function that display value 
+               function dis(val) 
+               { 
+                   document.getElementById("result").value+=val 
+               } 
+                 
+               //function that evaluates the digit and return result 
+               function solve() 
+               { 
+                   let x = document.getElementById("result").value 
+                   let y = eval(x) 
+                   document.getElementById("result").value = y 
+               } 
+                 
+               //function that clear the display 
+               function clr() 
+               { 
+                   document.getElementById("result").value = "" 
+               } 
+            </script> 
+            <!-- for styling -->
+            <style> 
+               .title{ 
+               margin-bottom: 10px; 
+               text-align:center; 
+               width: 210px; 
+               color:rgb(37, 255, 244); 
+               border: solid rgb(231, 30, 188) 2px; 
+               } 
+        
+               input[type="button"] 
+               { 
+               background-color:rgb(15, 32, 0); 
+               color: rgb(83, 255, 255); 
+               border: solid black 2px; 
+               width:100% 
+               } 
+        
+               input[type="text"] 
+               { 
+               background-color:rgb(145, 27, 27); 
+               border: solid black 2px; 
+               width:100% 
+               } 
+            </style> 
+        <style>
+              h1{
+           
+           background-color: rgb(248, 19, 31);
+           font-family: Arial, Helvetica, Impact, Haettenschweiler, 
+           'Arial Narrow Bold', Arial, Helvetica, sans-serif;
+           color: rgb(38, 39, 38);
+                 }
+                 p{
+                   
+                   color: rgb(0, 0, 0);
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                 }
+
+                 h2{
+           color: rgb(1, 65, 117);
+           font-style: inherit;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                 }
+                 body{
+background-color:   rgb(209, 118, 0);
+columns: rgb(0, 255, 42);
+                 }
+                    
+            </style>
+     
+        
+    
+        <title>www.sandeep.com</title>
+    
+    </head>
+    
+  
+        <body>
+           <h1>  <h1> <marquee behavior="scroll" direction="left">
+                <h1> ~~~This is my first web page~~~ ;)<h1> </marquee>
+
+            
+            
+            <h2> What is this all about?</h2>
+            
+            <p> Actually now a days <strong> winter holidays </strong> are going on .. so i have some time to explore so i thought lets try to learn web development  and actually in same time i am also learning c language that is very use full for oprating system. <br> we are going to tought this course by sumbhudhu sir, he is a professor in iiitd and supriya mam is assistante of this course.
+            </p>
+            
+            <h2> Here is my personal information wanna know ?? </h2>
+            <img src="download.png" alt"lets go..." width="120" height="100">
+           
+            <h2> 1. My college information </h2>
+            <a href = "https://www.iiitd.ac.in/" target = "blank" > <img src="download (1).png" height="52", width="52" > College_link </a>
+            
+            <h2> 2. My facebook id-- </h2>
+            
+            <a href = "https://www.facebook.com/profile.php?id=100026567165839" target = "blank" > <img src="download.jpeg" height="48", width="48" > Facebook_link </a>
+            
+             <h2> 3. my instagram id-- </h2>
+            <a href= "https://www.instagram.com/sandeep_verma18/" target="_blank" > <img src= "instagram.jpg" height="50" ,width="50"> Instagram_id </a>   <br>
+
+            <h2> 4. My linked_inid-- </h2>
+            <a href = "https://www.linkedin.com/in/sandeep-kumar-4b9382196//" target = "blank" > <img src="download (1).jpeg" height="52", width="52" > College_link </a>
+            
+            <h2> 5. some_otherthings-- </h2>
+            <h2> <marquee behavior="scroll" direction="left">{ Under_process ;)   } </marquee> </h2>
+            <h3>  *Simple_calculator-- </h3>
+            <p> Actually when you are making on your website so that time u will be very excited in doing the things through your website so whenever you are doing something in my website or i am updating that so i have made a simple calcutor for simple calculation u know .;)</p>
+                <div class = title > <marquee behavior="scroll" direction="left"><strong> Simple_calculator--</strong></marquee></div> 
+                <table border="1"> 
+                   <tr> 
+                      <td colspan="3"><input type="text" id="result"/></td> 
+                      <!-- clr() function will call clr to clear all value -->
+                      <td><input type="button" value="c" onclick="clr()"/> </td> 
+                   </tr> 
+                   <tr> 
+                      <!-- create button and assign value to each button -->
+                      <!-- dis("1") will call function dis to display value -->
+                      <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+                      <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+                      <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+                      <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+                   </tr> 
+                   <tr> 
+                      <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+                      <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+                      <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+                      <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+                   </tr> 
+                   <tr> 
+                      <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+                      <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+                      <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+                      <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+                   </tr> 
+                   <tr> 
+                      <td><input type="button" value="." onclick="dis('.')"/> </td> 
+                      <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+                      <!-- solve function call function solve to evaluate value -->
+                      <td><input type="button" value="=" onclick="solve()"/> </td> 
+                      <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+                   </tr> 
+                </table> 
+                <div id="after_submit"></div>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name">Your name:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Your email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Your message:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <input id="submit_button" type="submit" value="Send email" />
+</form>
+             
+     <input type ="button" one click="mypop_up" value=    
+        
+        
+        
+        
+        
+        <script>
+        alert();
+        </script>
+        
+        
+        </body>
+
+
+
+</html>
